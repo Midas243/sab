@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feuille de Route Sabrina Penenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .status-accompli { background-color: #dcfce7; color: #166534; }
+        .status-non-accompli { background-color: #fee2e2; color: #991b1b; }
+        .status-arret { background-color: #fef3c7; color: #92400e; }
+        .badge { padding: 4px 12px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
+        tr:hover { background-color: #f1f5f9; transition: background 0.2s; }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+            <div>
+                <h1 class="text-3xl font-bold text-slate-800">Feuille de Route</h1>
+                <p class="text-slate-500">Suivi des activités - Sabrina Penenge</p>
+            </div>
+            <div class="flex gap-2">
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 text-center">
+                    <span class="block text-2xl font-bold text-green-600">7</span>
+                    <span class="text-xs text-slate-500 uppercase">Accomplis</span>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 text-center">
+                    <span class="block text-2xl font-bold text-amber-500">5</span>
+                    <span class="text-xs text-slate-500 uppercase">Arrêtés</span>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 text-center">
+                    <span class="block text-2xl font-bold text-red-500">1</span>
+                    <span class="text-xs text-slate-500 uppercase">Non réalisé</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table Container -->
+        <div class="bg-white shadow-xl rounded-2xl overflow-hidden border border-slate-200">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 border-bottom border-slate-200">
+                            <th class="px-6 py-4 text-sm font-semibold text-slate-600">Période</th>
+                            <th class="px-6 py-4 text-sm font-semibold text-slate-600">Pilier / Action</th>
+                            <th class="px-6 py-4 text-sm font-semibold text-slate-600">Objectifs</th>
+                            <th class="px-6 py-4 text-sm font-semibold text-slate-600">Statut</th>
+                            <th class="px-6 py-4 text-sm font-semibold text-slate-600">Notes / Raison</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <!-- Mai 2025 -->
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-slate-700 whitespace-nowrap">Mai 2025</td>
+                            <td class="px-6 py-4">
+                                <span class="block text-xs font-bold text-indigo-500 uppercase mb-1">Accompagnement éducatif</span>
+                                <span class="font-semibold text-slate-800">Trimestrielle - Face à face</span>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-slate-600 max-w-xs">Communication fluide entre le Préfac et les étudiants.</td>
+                            <td class="px-6 py-4"><span class="badge status-accompli">Accompli</span></td>
+                            <td class="px-6 py-4 text-xs text-slate-500 italic">Réalisé</td>
+                        </tr>
+                        <!-- Juin 2025 -->
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-slate-700 whitespace-nowrap">Juin 2025</td>
+                            <td class="px-6 py-4">
+                                <span class="block text-xs font-bold text-indigo-500 uppercase mb-1">Accompagnement éducatif</span>
+                                <span class="font-semibold text-slate-800">Entretien spécial</span>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-slate-600 max-w-xs">Choix stratégiques : filière, mémoire, stage.</td>
+                            <td class="px-6 py-4"><span class="badge status-accompli">Accompli</span></td>
+                            <td class="px-6 py-4 text-xs text-slate-500 italic">Réalisé</td>
+                        </tr>
+                        <!-- Octobre 2025 -->
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-slate-700 whitespace-nowrap">Oct. 2025</td>
+                            <td class="px-6 py-4">
+                                <span class="block text-xs font-bold text-indigo-500 uppercase mb-1">Accompagnement éducatif</span>
+                                <span class="font-semibold text-slate-800">Échange Nouveaux / L2</span>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-slate-600 max-w-xs">Intégration et renforcement de l'engagement étudiant.</td>
+                            <td class="px-6 py-4"><span class="badge status-accompli">Accompli</span></td>
+                            <td class="px-6 py-4 text-xs text-slate-500 italic">Réalisé</td>
+                        </tr>
+                        <!-- Novembre 2025 -->
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-slate-700 whitespace-nowrap">Nov. 2025</td>
+                            <td class="px-6 py-4">
+                                <span class="block text-xs font-bold text-purple-500 uppercase mb-1">Recherche scientifique</span>
+                                <span class="font-semibold text-slate-800">Génie en herbe</span>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-slate-600 max-w-xs">Promouvoir la compétitivité et la connaissance.</td>
+                            <td class="px-6 py-4"><span class="badge status-non-accompli">Non accompli</span></td>
+                            <td class="px-6 py-4 text-xs text-red-500 font-medium">Non réalisé</td>
+                        </tr>
+                        <!-- Décembre 2025 -->
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-medium text-slate-700 whitespace-nowrap">Déc. 2025</td>
+                            <td class="px-6 py-4">
+                                <span class="block text-xs font-bold text-emerald-500 uppercase mb-1">Social & Environnement</span>
+                                <span class="font-semibold text-slate-800">Journée du lien</span>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-slate-600 max-w-xs">Collecte de fonds pour les enfants malades.</td>
+                            <td class="px-6 py-4"><span class="badge status-accompli">Accompli</span></td>
+                            <td class="px-6 py-4 text-xs text-slate-500 italic">Réalisé</td>
+                        </tr>
+                        <!-- Janvier 2026 -->
+                        <tr class="bg-amber-50/30">
+                            <td class="px-6 py-4 text-sm font-medium text-slate-700 whitespace-nowrap">Janv. 2026</td>
+                            <td class="px-6 py-4">
+                                <span class="block text-xs font-bold text-orange-400 uppercase mb-1">Multiples</span>
+                                <span class="font-semibold text-slate-800">Tournoi, RSE & Face à Face</span>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-slate-600 max-w-xs">Épanouissement, ODD et communication.</td>
+                            <td class="px-6 py-4"><span class="badge status-arret">Arrêt</span></td>
+                            <td class="px-6 py-4 text-xs text-amber-600 font-medium">Arrêt forcé des activités</td>
+                        </tr>
+                        <!-- Février 2026 -->
+                        <tr class="bg-amber-50/30">
+                            <td class="px-6 py-4 text-sm font-medium text-slate-700 whitespace-nowrap">Févr. 2026</td>
+                            <td class="px-6 py-4">
+                                <span class="block text-xs font-bold text-indigo-500 uppercase mb-1">Accompagnement éducatif</span>
+                                <span class="font-semibold text-slate-800">Conférence Ecomonde</span>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-slate-600 max-w-xs">Insertion professionnelle des étudiants.</td>
+                            <td class="px-6 py-4"><span class="badge status-arret">Arrêt</span></td>
+                            <td class="px-6 py-4 text-xs text-amber-600 font-medium">Arrêt forcé des activités</td>
+                        </tr>
+                        <!-- Avril 2026 -->
+                        <tr class="bg-amber-50/30">
+                            <td class="px-6 py-4 text-sm font-medium text-slate-700 whitespace-nowrap">Avril 2026</td>
+                            <td class="px-6 py-4">
+                                <span class="block text-xs font-bold text-purple-500 uppercase mb-1">Recherche scientifique</span>
+                                <span class="font-semibold text-slate-800">Revue de la FASE</span>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-slate-600 max-w-xs">Excellence académique par l'innovation.</td>
+                            <td class="px-6 py-4"><span class="badge status-arret">Arrêt</span></td>
+                            <td class="px-6 py-4 text-xs text-amber-600 font-medium">Arrêt forcé des activités</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <p class="mt-6 text-center text-sm text-slate-400">
+            Généré à partir du fichier source : Feuille_de_route_Sabrina_Penenge_Updated.xlsx
+        </p>
+    </div>
+
+</body>
+</html>
